@@ -1,0 +1,89 @@
+c -------------------------------------------------------------
+c el_yezidi.kmn
+c (Version 1.0)
+c
+c Keyboard layout for the modern Yezidi alphabet.
+c
+c Developed and released under MIT license by Enabling Languages.
+c
+c 29 Jan 2021
+c
+c -------------------------------------------------------------
+
+store(&version) "10.0"
+store(&NAME) 'Yezidi'
+store(&KEYBOARDVERSION) '0.1'
+store(&COPYRIGHT) '© 2021 Enabling Languages'
+store(&mnemoniclayout) "0"
+store(&MESSAGE) 'Keyboard layout for Yezidi (𐺀𐺩𐺏𐺨𐺋𐺨)'
+store(&TARGETS) 'any'
+store(&BITMAP) 'el_yezidi.ico'
+store(&VISUALKEYBOARD) 'el_yezidi.kvks'
+store(&LAYOUTFILE) 'el_yezidi.keyman-touch-layout'
+
+begin Unicode > use(constraints)
+
+c ------------------------------------------------
+c Alphabetic characters
+c ------------------------------------------------
+
+store(alphaKeys) U+10E88 U+10E93 U+10E83 U+10E9C U+10E99 U+10E98 U+10E97 U+10EA7 U+10E8A U+10E89 U+10E86 \
+U+10E92 U+10E91 U+10EA8 U+10E81 U+10EA0 U+10E80 U+10E84 U+10EA2 U+10EA1 U+10E9E U+10E95 \
+U+10EAC U+10EA9 U+10EA5 U+10E8D U+10E90 U+10E8F U+10E9F U+10E8F U+10E9B U+10E8B \
+U+10E88 U+10E94 U+10E82 U+10EA6 \
+U+10EB0 U+10E85 U+10E9D U+10E96 \
+U+10EAB U+10EAD U+10EB1 U+10EA4 U+10E8E U+10E9A U+10E8C
+
+store(alphaChars) [K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_U] [K_I] [K_O] [K_P] [K_LBRKT] \
+[K_A] [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] [K_COLON] [K_QUOTE] \
+[K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M] [K_COMMA] [K_PERIOD] [K_SLASH] \
+[SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_I] \
+[SHIFT K_G] [SHIFT K_J] [SHIFT K_COLON] [SHIFT K_QUOTE] \
+[SHIFT K_Z] [RALT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_PERIOD] [SHIFT K_SLASH]
+
+c ------------------------------------------------
+c Digits: 1234567890
+c ------------------------------------------------
+
+store(digitChars) U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030           c 1234567890
+store(digitKeys) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(digitKeysPad) [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0]
+
+c ------------------------------------------------
+c Punctuation:
+c ------------------------------------------------
+
+store(punctuationChars)
+store(punctuationKeys)
+
+c ------------------------------------------------
+c key collections:
+c ------------------------------------------------
+
+store(coreKeys) outs(alphaKeys)
+store(coreChars) outs(alphaChars)
+
+c ------------------------------------------------
+c Null keys:
+c ------------------------------------------------
+
+store(nulKeys) [K_BKQUOTE] [SHIFT K_BKQUOTE] [K_HYPHEN] [SHIFT K_HYPHEN] [K_EQUALS] [SHIFT K_EQUALS]
+
+c ================================================
+c
+c Main group
+c   Processes rules for:
+c     * 
+c
+c ================================================
+
+group(main) using keys
+
++ any(nulKeys) > nul
++ any(coreKeys) > index(coreChars,1)
++ any(digitKeysPad) > index(digitChars,1)
+
+
+
+
++ [LALT K_Z] > U+10EAD
