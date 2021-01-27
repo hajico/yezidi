@@ -1,4 +1,4 @@
-c -------------------------------------------------------------
+﻿c -------------------------------------------------------------
 c el_yezidi.kmn
 c (Version 1.0)
 c
@@ -16,12 +16,12 @@ store(&KEYBOARDVERSION) '0.1'
 store(&COPYRIGHT) '© 2021 Enabling Languages'
 store(&mnemoniclayout) "0"
 store(&MESSAGE) 'Keyboard layout for Yezidi (𐺀𐺩𐺏𐺨𐺋𐺨)'
-store(&TARGETS) 'any'
+store(&TARGETS) 'windows'
 store(&BITMAP) 'el_yezidi.ico'
 store(&VISUALKEYBOARD) 'el_yezidi.kvks'
 store(&LAYOUTFILE) 'el_yezidi.keyman-touch-layout'
 
-begin Unicode > use(constraints)
+begin Unicode > use(main)
 
 c ------------------------------------------------
 c Alphabetic characters
@@ -53,8 +53,8 @@ c ------------------------------------------------
 c Punctuation:
 c ------------------------------------------------
 
-store(punctuationChars)
-store(punctuationKeys)
+c store(punctuationChars)
+c store(punctuationKeys)
 
 c ------------------------------------------------
 c key collections:
@@ -80,7 +80,8 @@ c ================================================
 group(main) using keys
 
 + any(nulKeys) > nul
-+ any(coreKeys) > index(coreChars,1)
++ any(alphaKeys) > index(alphaChars,1)
++ any(digitKeys) > index(digitChars,1)
 + any(digitKeysPad) > index(digitChars,1)
 
 

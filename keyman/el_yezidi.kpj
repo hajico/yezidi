@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProject>
+  <Options>
+    <BuildPath>$PROJECTPATH/build</BuildPath>
+    <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
+    <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>True</CheckFilenameConventions>
+    <ProjectType>keyboard</ProjectType>
+  </Options>
+  <Files>
+    <File>
+      <ID>id_8f9d9f7af47ab5b9b838e7f4a6bb2e4f</ID>
+      <Filename>el_yezidi.kmn</Filename>
+      <Filepath>source\el_yezidi.kmn</Filepath>
+      <FileVersion>0.1</FileVersion>
+      <FileType>.kmn</FileType>
+      <Details>
+        <Name>Yezidi</Name>
+        <Copyright>© 2021 Enabling Languages</Copyright>
+        <Message>Keyboard layout for Yezidi (𐺀𐺩𐺏𐺨𐺋𐺨)</Message>
+      </Details>
+    </File>
+    <File>
+      <ID>id_3112528f3d1ea45688ccf68e2d5e1e87</ID>
+      <Filename>el_yezidi.ico</Filename>
+      <Filepath>source\el_yezidi.ico</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ico</FileType>
+      <ParentFileID>id_8f9d9f7af47ab5b9b838e7f4a6bb2e4f</ParentFileID>
+    </File>
+  </Files>
+</KeymanDeveloperProject>

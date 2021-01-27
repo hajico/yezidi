@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProjectUser>
+  <ViewState>
+    <tab>1</tab>
+    <showhelp>1</showhelp>
+    <path>\\VBOXSVR\el-le\languages\yezidi\keyman\el_yezidi.kpj</path>
+  </ViewState>
+  <FileStates>
+    <FileState>
+      <ID>id_8f9d9f7af47ab5b9b838e7f4a6bb2e4f</ID>
+      <FullPath>\\VBOXSVR\el-le\languages\yezidi\keyman\source\el_yezidi.kmn</FullPath>
+      <IDEState>
+        <LayoutDisplay102Key>0</LayoutDisplay102Key>
+        <DebugDefaultFont>1</DebugDefaultFont>
+        <DebugFont>MS Sans Serif|8|   |1</DebugFont>
+        <CodeFont>Consolas|9|   |0</CodeFont>
+        <CharFont>Noto Serif Yezidi|9|   |0</CharFont>
+      </IDEState>
+      <Debug>False</Debug>
+    </FileState>
+    <FileState>
+      <ID>id_3112528f3d1ea45688ccf68e2d5e1e87</ID>
+      <FullPath>\\VBOXSVR\el-le\languages\yezidi\keyman\source\el_yezidi.ico</FullPath>
+    </FileState>
+  </FileStates>
+  <MRU>
+    <File>
+      <ID>id_MRU0</ID>
+      <Filename>el_yezidi.kmn</Filename>
+      <FileType>.kmn</FileType>
+      <FullPath>\\VBOXSVR\el-le\languages\yezidi\keyman\source\el_yezidi.kmn</FullPath>
+    </File>
+  </MRU>
+</KeymanDeveloperProjectUser>
