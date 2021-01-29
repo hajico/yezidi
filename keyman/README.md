@@ -1,22 +1,20 @@
-____________ Keyboard
-=====================
+# Yezidi Keyboard
 
-Copyright (c) YYYY _____________________
+Copyright (c) 2021 Enabling Languages
 
-Version A.B
+Version 1.0
 
 __DESCRIPTION__
 <add a description of this keyboard>
 
-Links
------
+## Links
 
- * Home:     <___URL of keyboard info on your website___> or else omit this line
- * Help:     <___URL of keyboard help on your website___> or else omit this line
- * Contact:  <___EMAIL___> if you want to include your email address or else omit this line
+ * Home:     https://enablinglanguages.github.io/yezidi/
+ * Help:     https://enablinglanguages.github.io/yezidi/keyboard/
+ * Contact:  enabling.languages@gmail.com
 
-Supported Platforms
--------------------
+## Supported Platforms
+
  * Windows
  * macOS
  * Linux
@@ -25,8 +23,7 @@ Supported Platforms
  * iOS
  * Android
 
-Todo
-----
+## Todo
 
 * Fill in the blanks in this README.md file:
   * Fill in the name of keyboard
